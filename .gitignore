@@ -1,0 +1,18 @@
+# Ignoring directories
+# Both the directory itself and its contents will be ignored.
+bin/
+gen/
+
+# Glob pattern can also be used here to ignore paths with certain characters.
+# For example, the below rule will match both build/ and Build/
+[bB]uild/
+
+# Without the trailing slash, the rule will match a file and/or
+# a directory, so the following would ignore both a file named `gen`
+# and a directory named `gen`, as well as any contents of that directory
+bin
+
+# Ignoring files by extension
+# All files with these extensions will be ignored in
+# this directory and all its sub-directories.
+*.class
